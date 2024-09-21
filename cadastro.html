@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuário</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background: url("https://wallpapers.com/images/featured-full/fundo-roxo-e-preto-lv1jbd2edszka6d1.jpg");
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+        width: 500px;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .2);
+        backdrop-filter: blur(20px);
+        border-radius: 10px;
+        padding: 30px 40px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        .input-container {
+            margin-bottom: 15px;
+        }
+        .input-container input {
+            width: 86.2%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 10px;
+            font-size: 16px;
+            color: #fff;
+            padding: 20px 45px 20px 20px;
+        }
+        input::placeholder{
+            color: #fff;
+        }
+        .submit-button {
+            width: 100%;
+            height: 50px;
+            background-color: rgba(255, 255, 255, .2);
+            color: #fff;
+            font-size: 16px;
+            border-radius: 10px;
+            font-weight: 500;
+            margin-top: 24px;
+            cursor: pointer;
+            outline: none;
+            border: none;
+        }
+        .submit-button:hover {
+            opacity: 0.9;
+        }
+        .input-container img{
+            position: absolute;
+            margin-top: 16px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Registre-se</h1>
+        <form id="registroForm">
+            <div class="input-container">
+                <input type="email" id="registroEmail" placeholder="Email" required>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/user.png" alt="user"/>
+            </div>
+            <div class="input-container">
+                <input type="password" id="registroSenha" placeholder="Senha" required>
+                <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/password.png" alt="password"/>
+            </div>
+            <button id="but" class="submit-button" type="submit">Registrar</button>
+        </form>
+    </div>
+
+    <script src="/credentials.js"></script>
+</body>
+</html>
